@@ -50,6 +50,8 @@ var checkForMatch = function(){
       console.log("Sorry, try again.");
       allCards[cardObject1.id].setAttribute("src", "images/back.png");
       allCards[cardObject2.id].setAttribute("src", "images/back.png");
+      allCards[cardObject1.id].classList.add("unflipped");
+      allCards[cardObject2.id].classList.add("unflipped");
       cardsInPlayObjects = [];
       //scoreHolder.textContent = score;
     }
